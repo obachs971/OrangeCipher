@@ -464,7 +464,7 @@ public class ultimateCipher : MonoBehaviour {
         }
         if(flag2)
         {
-            pages[0][1] = "ABCDEFGHIKLMNOPQRSTUVWXYZ"[UnityEngine.Random.Range(0, 26)].ToString();
+            pages[0][1] = "ABCDEFGHIKLMNOPQRSTUVWXYZ"[UnityEngine.Random.Range(0, 25)].ToString();
         }
         return encrypt;
     }
