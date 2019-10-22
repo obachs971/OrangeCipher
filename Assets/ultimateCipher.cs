@@ -511,7 +511,7 @@ public class ultimateCipher : MonoBehaviour {
             Array.Reverse(temp);
             encrypt2 = encrypt2 + "" + new string(temp);
         }
-        Debug.LogFormat("[Orange Cipher #{0}] Subgroup Number: ", subgroup);
+        Debug.LogFormat("[Orange Cipher #{0}] Subgroup Number: {1}", moduleId, subgroup);
         Debug.LogFormat("[Orange Cipher #{0}] {1} -> {2}", moduleId, encrypt, encrypt2);
         
         return encrypt2;
