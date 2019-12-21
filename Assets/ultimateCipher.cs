@@ -204,7 +204,7 @@ public class ultimateCipher : MonoBehaviour {
         {
             if (word[aa] == 'J')
             {
-                encrypt = encrypt + "ABCDEFGHIKLMNOPQRSTUVWXYZ"[UnityEngine.Random.Range(0, 26)];
+                encrypt = encrypt + "ABCDEFGHIKLMNOPQRSTUVWXYZ"[UnityEngine.Random.Range(0, 25)];
                 b[aa] = true;
             }
             else
@@ -450,21 +450,20 @@ public class ultimateCipher : MonoBehaviour {
         Debug.LogFormat("[Orange Cipher #{0}] Encrypted Keyword: {1}", moduleId, kw2encrypt);
         pages[0][2] = kw2encrypt.Substring(0, kw2encrypt.Length / 2);
         pages[1][0] = kw2encrypt.Substring(kw2encrypt.Length / 2);
-        
 
-        bool flag2 = true;
+
+        string alpha = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
         for (int aa = 0; aa < 6; aa++)
         {
             if (b[aa])
             {
                 pages[0][1] = pages[0][1] + "" + encrypt[aa];
                 encrypt = encrypt.Substring(0, aa) + "J" + encrypt.Substring(aa + 1);
-                flag2 = false;
             }
-        }
-        if(flag2)
-        {
-            pages[0][1] = "ABCDEFGHIKLMNOPQRSTUVWXYZ"[UnityEngine.Random.Range(0, 25)].ToString();
+            else
+            {
+                pages[0][1] = pages[0][1] + "" + alpha[UnityEngine.Random.Range(0, 25)];
+            }
         }
         return encrypt;
     }
@@ -639,7 +638,14 @@ public class ultimateCipher : MonoBehaviour {
         screenTexts[0].fontSize = 40;
         screenTexts[1].fontSize = 40;
         screenTexts[2].fontSize = 40;
-        
+        if(page == 0)
+            screenTexts[2].fontSize = 37;
+        else
+        {
+            screenTexts[0].fontSize = 37;
+            screenTexts[1].fontSize = 35;
+        }
+            
     }
     void submitWord(KMSelectable submitButton)
     {
@@ -682,6 +688,7 @@ public class ultimateCipher : MonoBehaviour {
                 screenTexts[0].text = "";
                 screenTexts[1].text = "";
                 screenTexts[2].text = pressed.GetComponentInChildren<TextMesh>().text;
+                screenTexts[2].fontSize = 40;
                 submitScreen = true;
             }
         }
