@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Orange Cipher - Keep Talking and Nobody Explodes Module</title>
+    <title>Orange Cipher — Keep Talking and Nobody Explodes Module</title>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -45,7 +45,7 @@
                 <p>Take the entire alphabet (not including the J) and remove any letters that is shown in the keyword.</p>
                 <p>If the last digit of the serial number is even, place the alphabet at the end of the keyword. Otherwise, place the alphabet at the beginning of the keyword.</p>
                 <p>Take the 25 length string and arrange it into a 5x5 matrix of letters. For now on, this will be called Matrix A.</p>                
-	</div>
+    </div>
             <div class="page-footer relative-footer">Page 1 of 6</div>
         </div>
         <div class="page page-bg-02">
@@ -54,20 +54,20 @@
                 <span class="page-header-section-title">Orange Cipher</span>
             </div>
             <div class="page-content">
-		<p>Catenate the 2 encrypted strings on the bottom screen of page 1 and the top screen of page 2.</p>
-               	<p>Split the encrypted string into pairs and follow the instructions below for each pair:</p>
-		<ul>
-		<li>Find the 1st letter of the pair in Matrix A and use that as the row.</li>
-		<li>Find the 2nd letter of the pair in Matrix A and use that as the column.</li>
-		<li>The intersection of the 2 letters will give you a decrypted letter.</li>
-		</ul>
-		<p>The resulting letters will form a keyword that will be used in step 3. Keep in mind that because of the absence of the letter J, that the word might have Is that were originally Js.</p>
-		<h4 style="text-align:center">Example</h4>
+        <p>Catenate the 2 encrypted strings on the bottom screen of page 1 and the top screen of page 2.</p>
+                <p>Split the encrypted string into pairs and follow the instructions below for each pair:</p>
+        <ul>
+        <li>Find the 1st letter of the pair in Matrix A and use that as the row.</li>
+        <li>Find the 2nd letter of the pair in Matrix A and use that as the column.</li>
+        <li>The intersection of the 2 letters will give you a decrypted letter.</li>
+        </ul>
+        <p>The resulting letters will form a keyword that will be used in step 3. Keep in mind that because of the absence of the letter J, that the word might have Is that were originally Js.</p>
+        <h4 style="text-align:center">Example</h4>
                 <p style="text-align:center">
                     Encrypted Word: XFDFCTCGAL<br>
                     Key A: MUSCLARBDEFGHIKNOPQTVWXYZ<br>
-		</p>
-		    <table>
+        </p>
+            <table>
                     <tbody>
                         <tr><th>M</th><th>U</th><th>S</th><th>C</th><th>L</th></tr>
                         <tr><th>A</th><th>R</th><th>B</th><th>D</th><th>E</th></tr>
@@ -76,12 +76,12 @@
                         <tr><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr>
                     </tbody>
                     </table>
-		<p style="text-align:center">
-		    XF -> V<br>
-	            DF -> A<br>
-		    CT -> L<br>
-		    CG -> U<br>
-		    AL -> E<br>
+        <p style="text-align:center">
+            XF -> V<br>
+                DF -> A<br>
+            CT -> L<br>
+            CG -> U<br>
+            AL -> E<br>
                     Decrypted Keyword: VALUE
                 </p>
             </div>
@@ -111,14 +111,14 @@
                 <p>If the second digit of the serial number is odd, place the alphabet at the end of the keyword. Otherwise, place the alphabet at the beginning of the keyword.</p>
                 <p>Take the 25 length string and arrange it into a 5x5 matrix of letters, creating Matrix C.</p>
                 <p>With the encrypted word on the top screen of page 1, divide it into subgroups of X letters where X equals the sum of the digits from the bottom screen of page 2, modulo 4, plus 2.</p>
-            	<p>For each subgroup, reverse the letters inside of it.</p>
+                <p>For each subgroup, reverse the letters inside of it.</p>
                 <h4 style="text-align:center">Example</h4>
                 <p style="text-align:center">
                     3 + 0 + 9 + 7 = 19 % 4 = 3 + 2 = 5<br>
                     DGPGKF => DGPGK F => KGPGD F => KGPGDF
                 </p>
 
-	</div>
+    </div>
             <div class="page-footer relative-footer">Page 3 of 6</div>
         </div>
         <div class="page page-bg-04">
@@ -151,7 +151,7 @@
                     G -> B<br>
                     D -> Q<br>
                     F -> V<br>
-		    New Encrypted Word: GBWBQV
+            New Encrypted Word: GBWBQV
                 </p>
                 <h3>Step 3: Foursquare Cipher</h3>
                 <p>As the step suggests, it requires 4 matrices. Matrix A, B, C that was used for steps 1 and 2 will be used here. Matrix D will be created by using the keyword that you got from step 1.</p>
@@ -181,7 +181,7 @@
                 </ul>
                 <p>Remember to replace any letters that were Js initially to a J to get your deciphered word.</p>
                 <h4 style="text-align:center">Example</h4>
-				<p style="text-align:center">
+                <p style="text-align:center">
                     Encrypted Word: GBWBQV<br>
                     Key A: MUSCLARBDEFGHIKNOPQTVWXYZ<br>
                     Key B: AFLQVBGMRWCHNSXDIOTYEKPUZ<br>
